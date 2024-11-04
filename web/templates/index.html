@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Índice</h2>
+<ul class="list-group">
+    {% for producto in productos %}
+        <li class="list-group-item">{{ producto }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
